@@ -10,7 +10,12 @@ def brand_distribution():
     response = supabase.table("products").select("Brand").execute()
     df = pd.DataFrame(response.data)
 
-    return df["Brand"].value_counts().to_dict()
+    brand_counts = df["Brand"].value_counts()
+    result = [
+        {"Brand": brand, "Product_Count": int(count)}
+        for brand, count in brand_counts.items()
+        ]
+    return result
 
 
 # CATEGORY DISTRIBUTION
