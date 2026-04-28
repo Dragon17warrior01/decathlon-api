@@ -1,8 +1,8 @@
-#🏪 Decathlon Product Analytics API
+# 🏪 Decathlon Product Analytics API
 
 A FastAPI-based analytics project that extracts, processes, and analyzes product data from Decathlon India. This project demonstrates an end-to-end data pipeline including web scraping, data processing, analytics, and REST API development.
 
-##🚀 Features
+## 🚀 Features
 
 🕷️ Web scraping pipeline to collect Decathlon product data
 🧹 Data cleaning and transformation using Pandas
@@ -39,16 +39,16 @@ pip install -r requirements.txt
 bashuvicorn api.main:app --reload
 Then open your browser at: http://localhost:8000/docs
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 ToolPurposePythonCore languageFastAPIREST API frameworkPandasData processingMatplotlib / SeabornData visualizationBeautifulSoup / RequestsWeb scrapingRenderCloud deployment
 
-###👤 Author
+### 👤 Author
 Dragon17warrior01
 
 🔗 GitHub: @Dragon17warrior01
 💼 LinkedIn: https://www.linkedin.com/in/prajaktaningole
 
 
-##📌 Note
+## 📌 Note
 
 This project was built as a portfolio project to demonstrate data engineering and API development skills. The scraping is done for educational purposes only.
