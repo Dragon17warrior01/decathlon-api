@@ -1,81 +1,53 @@
-# Decathlon Product Analytics API
+🏪 Decathlon Product Analytics API
+A FastAPI-based analytics project that extracts, processes, and analyzes product data from Decathlon India. This project demonstrates an end-to-end data pipeline including web scraping, data processing, analytics, and REST API development.
 
-A FastAPI-based analytics project that extracts, processes, and analyzes product data from Decathlon. This project demonstrates end-to-end data pipeline skills including web scraping, data processing, analytics, and API development.
+🚀 Features
 
----
+🕷️ Web scraping pipeline to collect Decathlon product data
+🧹 Data cleaning and transformation using Pandas
+📊 Analytical insights on product pricing and categories
+⚡ FastAPI endpoints for accessing analytics results
+📈 Visualizations generated from processed data
 
-## 🚀 Features
 
-* Web scraping pipeline to collect product data
-* Data cleaning and transformation
-* Analytical insights on product pricing and categories
-* FastAPI endpoints for accessing analytics
-* Visualizations generated from processed data
+🌐 Live Demo
+ResourceLink📄 API Docs (Swagger)decathlon-api-63fi.onrender.com/docs🔗 Base URLdecathlon-api-63fi.onrender.com
 
----
+📡 API Endpoints
+MethodEndpointDescriptionGET/Health checkGET/productsGet all scraped productsGET/analyticsGet analytics summaryGET/plotsView generated visualizations
 
-## 📊 API Endpoints
-
-| Endpoint     | Description                   |
-| ------------ | ----------------------------- |
-| `/`          | Health check                  |
-| `/products`  | Get all products              |
-| `/analytics` | Get analytics summary         |
-| `/plots`     | View generated visualizations |
-
----
-
-## 🧱 Project Structure
-
-```
+🧱 Project Structure
 decathlon-api/
-├── api/              # FastAPI routes and endpoints
-├── analytics/        # Analytics logic and calculations  
-├── scraping/         # ETL pipeline and web scraping
+├── api/              # FastAPI routes and app entry point
+├── analytics/        # Analytics logic and calculations
+├── scraping/         # Web scraping / ETL pipeline
 ├── data/             # Raw and processed data files
-├── outputs/plots/    # Generated visualisations
+├── outputs/plots/    # Generated visualizations
 ├── requirements.txt  # Python dependencies
 └── start.sh          # Startup script
-```
 
----
-
-## ⚙️ Installation
-
-```
-git clone https://github.com/your-username/decathlon-api.git
+⚙️ Installation & Setup
+bash# 1. Clone the repository
+git clone https://github.com/Dragon17warrior01/decathlon-api.git
 cd decathlon-api
+
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
----
+▶️ Run the API Locally
+bashuvicorn api.main:app --reload
+Then open your browser at: http://localhost:8000/docs
 
-## ▶️ Run the API
+🛠️ Tech Stack
+ToolPurposePythonCore languageFastAPIREST API frameworkPandasData processingMatplotlib / SeabornData visualizationBeautifulSoup / RequestsWeb scrapingRenderCloud deployment
 
-```
-uvicorn api.main:app --reload
-```
+👤 Author
+Dragon17warrior01
 
----
+🔗 GitHub: @Dragon17warrior01
+💼 LinkedIn: https://www.linkedin.com/in/prajaktaningole
 
-## 🌐 Live Demo
 
-API Docs: https://decathlon-api-63fi.onrender.com/docs  
-Base URL: https://decathlon-api-63fi.onrender.com/
+📌 Note
 
----
-
-## 🛠️ Tech Stack
-
-* Python
-* FastAPI
-* Pandas
-* Matplotlib / Seaborn
-* Web Scraping
-
----
-
-## 👤 Author
-
-* LinkedIn: https://linkedin.com/in/your-profile
-* GitHub: https://github.com/your-username
+This project was built as a portfolio project to demonstrate data engineering and API development skills. The scraping is done for educational purposes only.
