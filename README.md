@@ -12,7 +12,8 @@ A FastAPI-based analytics project that extracts, processes, and analyzes product
 
 
 🌐 Live Demo
-ResourceLink📄 API Docs (Swagger)decathlon-api-63fi.onrender.com/docs🔗 Base URLdecathlon-api-63fi.onrender.com
+ResourceLink📄 API Docs (Swagger): decathlon-api-63fi.onrender.com/docs 🔗
+Base URL: decathlon-api-63fi.onrender.com
 
 📡 API Endpoints
 MethodEndpointDescriptionGET/Health checkGET/productsGet all scraped productsGET/analyticsGet analytics summaryGET/plotsView generated visualizations
